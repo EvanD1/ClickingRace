@@ -12,6 +12,7 @@
 		26BB6C2722A9ACC30040F234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BB6C2522A9ACC30040F234 /* Main.storyboard */; };
 		26BB6C2922A9ACC50040F234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BB6C2822A9ACC50040F234 /* Assets.xcassets */; };
 		26BB6C2C22A9ACC50040F234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BB6C2A22A9ACC50040F234 /* LaunchScreen.storyboard */; };
+		794C708A34AB18A8E7A356FD /* Pods_ClickingRace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A468975E0987BC4C9A339B49 /* Pods_ClickingRace.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		26BB6C2822A9ACC50040F234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26BB6C2B22A9ACC50040F234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26BB6C2D22A9ACC50040F234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A468975E0987BC4C9A339B49 /* Pods_ClickingRace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickingRace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA00B3887354D34606214DF9 /* Pods-ClickingRace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickingRace.debug.xcconfig"; path = "Target Support Files/Pods-ClickingRace/Pods-ClickingRace.debug.xcconfig"; sourceTree = "<group>"; };
+		EF49379801750D02F0265C05 /* Pods-ClickingRace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickingRace.release.xcconfig"; path = "Target Support Files/Pods-ClickingRace/Pods-ClickingRace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794C708A34AB18A8E7A356FD /* Pods_ClickingRace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				26BB6C2022A9ACC30040F234 /* ClickingRace */,
 				26BB6C1F22A9ACC30040F234 /* Products */,
+				8731284AF01B6BD8074EEE6C /* Pods */,
+				F745EEC11E0B964EF769B564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = ClickingRace;
 			sourceTree = "<group>";
 		};
+		8731284AF01B6BD8074EEE6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA00B3887354D34606214DF9 /* Pods-ClickingRace.debug.xcconfig */,
+				EF49379801750D02F0265C05 /* Pods-ClickingRace.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F745EEC11E0B964EF769B564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A468975E0987BC4C9A339B49 /* Pods_ClickingRace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26BB6C3022A9ACC50040F234 /* Build configuration list for PBXNativeTarget "ClickingRace" */;
 			buildPhases = (
+				DDD666A4BAFFC685B3560CFA /* [CP] Check Pods Manifest.lock */,
 				26BB6C1A22A9ACC30040F234 /* Sources */,
 				26BB6C1B22A9ACC30040F234 /* Frameworks */,
 				26BB6C1C22A9ACC30040F234 /* Resources */,
+				087657DB4ACC57CE59FC2BEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087657DB4ACC57CE59FC2BEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClickingRace/Pods-ClickingRace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClickingRace/Pods-ClickingRace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickingRace/Pods-ClickingRace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD666A4BAFFC685B3560CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClickingRace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26BB6C1A22A9ACC30040F234 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		26BB6C3122A9ACC50040F234 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA00B3887354D34606214DF9 /* Pods-ClickingRace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		26BB6C3222A9ACC50040F234 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF49379801750D02F0265C05 /* Pods-ClickingRace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
